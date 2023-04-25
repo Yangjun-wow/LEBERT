@@ -1,4 +1,4 @@
-CUDA_VISIBLE_DEVICES=5 python3 -m torch.distributed.launch --master_port 13517 --nproc_per_node=1 \
+ python3 -m torch.distributed.launch --master_port 13517 --nproc_per_node=1 \
        Trainer.py --do_train --do_eval --do_predict --evaluate_during_training \
                   --data_dir="data/dataset/CWS/demo" \
                   --output_dir="data/result/CWS/demo/lebertcrf" \
